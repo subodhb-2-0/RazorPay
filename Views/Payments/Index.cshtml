@@ -1,0 +1,25 @@
+@model RazorPayMvc.Models.PaymentRequest;
+@{
+    ViewData["Title"] = "Order";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="form-control">
+    <form asp-controller="Payments" asp-action="ProcessRequestOrder" method="post">
+        <input asp-for="Name" placeholder="Enter Customer Name"><br>
+        <input asp-for="Email" placeholder="Enter Customer Email"><br>
+        <input asp-for="PhoneNumber" placeholder="Enter Phone Number"><br>
+        <input asp-for="Address" placeholder="Enter Address"><br>
+        <input asp-for="Amount" placeholder="Enter Amount (INR)"><br>
+        <input type="submit" id="Submit" value="Submit">
+    </form>
+</div>
+
+
+<div class="form-control">
+    <form asp-controller="Payments" asp-action="RefundFunds" method="post">
+        <input type="text" placeholder="Enter the Payment Id you want to Refund of: " name="paymentId">
+        <input type="submit" id="Submit" value="Submit">
+    </form>
+</div>

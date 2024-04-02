@@ -1,0 +1,22 @@
+@model RazorPayMvc.Models.PaymentRequest;
+@{
+    ViewData["Title"] = "Order";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <form asp-controller="payments" asp-action="ProcessRequestOrder" method="post">
+        <input asp-for="Name" placeholder="Enter Customer Name"><br>
+        <input asp-for="Email" placeholder="Enter Customer Email"><br>
+        <input asp-for="PhoneNumber" placeholder="Enter Phone Number"><br>
+        <input asp-for="Address" placeholder="Enter Address"><br>
+        <input asp-for="Amount" placeholder="Enter Amount (INR)"><br>
+        <input type="submit" id="Submit" value="Submit">
+    </form>
+</div>
+
+
+<div>
+    <a asp-action="CreatePayment" asp-controller="Payments">Create demo payments</a>
+</div>

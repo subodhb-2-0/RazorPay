@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "KWN4xfLscV2tyKze+d3TaP24A3cApa3etOVh1An9hAU0SS4j6iWGrqdg9OdMideFqnAfzdf5mr3musI8BuKqtg==",
+  "success": true,
+  "projectFilePath": "E:\\Codeology\\Roman Dai\\RazorPayMvc\\src\\RazorPayMvc.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Acer\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\razorpay.core\\1.0.2\\razorpay.core.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
